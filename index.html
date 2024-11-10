@@ -37,8 +37,8 @@
 
 
             alunos.forEach(aluno => {
-                let media = ((aluno.nota1 + aluno.nota2 + aluno.nota3) / 2).toFixed(2);
-                let status = media >= 6 ? "Aprovado" : "Reprovado";
+                let media = ((aluno.nota1 + aluno.nota2 + aluno.nota3) / 3).toFixed(3);
+                let status = media >= 60 ? "Aprovado" : "Reprovado";
 
                 linha = document.createElement("tr");
                 linha.innerHTML = `
